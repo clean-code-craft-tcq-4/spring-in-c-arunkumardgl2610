@@ -1,6 +1,6 @@
 struct Stats
 {
-  float average=0;
+  int average=0;
   int min=0;
   int max=0;
 };
