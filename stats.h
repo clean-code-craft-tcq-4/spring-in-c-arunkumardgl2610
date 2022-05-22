@@ -1,4 +1,4 @@
-struct stats
+struct Stats
 {
   float average=0;
   int min=0;
