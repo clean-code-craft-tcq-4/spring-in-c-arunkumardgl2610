@@ -6,7 +6,7 @@ void ledAlerter(){}
 
 struct Stats compute_statistics(const float* numberset, int setlength) {
     struct Stats s;
-    float G_Total=0;
+    int G_Total=0;
     if(numberset == 0)
     {      
     s.average = NAN;
@@ -19,14 +19,14 @@ struct Stats compute_statistics(const float* numberset, int setlength) {
         {
             if(numberset[a] > s.max)
             {
-                s.max = numberset[a]   
+                s.max = numberset[a];   
             }
             if(numberset[a] < s.min)
             {
-                s.min = numberset[a]   
+                s.min = numberset[a];   
             }
             G_Total = G_Total + numberset[a];
-            s.average = G.Total/setlength;
+            s.average = G_Total/setlength;
         }
     }
     return s;
