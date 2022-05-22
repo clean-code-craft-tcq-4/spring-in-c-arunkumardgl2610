@@ -9,9 +9,9 @@ struct Stats compute_statistics(const float* numberset, int setlength) {
     int G_Total=0;
     if(numberset == 0)
     {      
-    s.average = NAN;
-    s.min = NAN;
-    s.max = NAN;
+    s.average = 0;
+    s.min = 0;
+    s.max = 0;
     }
     else
     {
