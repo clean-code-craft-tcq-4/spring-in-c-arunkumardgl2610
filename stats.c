@@ -5,8 +5,8 @@ void emailAlerter(){}
 void ledAlerter(){}
 
 struct Stats compute_statistics(const float* numberset, int setlength) {
-    struct stats s;
-    float G.Total=0;
+    struct Stats s;
+    float G_Total=0;
     if(numberset == 0)
     {      
     s.average = NAN;
@@ -15,7 +15,7 @@ struct Stats compute_statistics(const float* numberset, int setlength) {
     }
     else
     {
-        for(int a=0;i<=setlength;a++)
+        for(int a=0;a<=setlength;a++)
         {
             if(numberset[a] > s.max)
             {
@@ -25,7 +25,7 @@ struct Stats compute_statistics(const float* numberset, int setlength) {
             {
                 s.min = numberset[a]   
             }
-            G.Total = G.Total + numberset[a];
+            G_Total = G_Total + numberset[a];
             s.average = G.Total/setlength;
         }
     }
